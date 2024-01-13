@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color: rgb(206, 24, 164);  
+        font-family: Verdana;
+        text-align: left;
+    }
+
+    h1{
+    text-align: center;
+    font-family: 'Black Ops One', system-ui;
+font-family: 'Pacifico', cursive;
+   } 
+  form{
+    background-color: rgb(238, 199, 230);
+    width: 800px;
+    height: auto; 
+    margin: 50px auto;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 10px #6b046c
+           
+  }
+  .form-label{
+    text-align:left;
+    margin-bottom: 10px;
+  }
+ 
+.form-label label{
+    display:block;
+    margin-bottom: 5px;
+}
+.form-label input,
+.form-label select,
+.form-label textarea{
+    border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+}
+.form-label input[type="radio"],
+.form-label input[type="checkbox"]{
+    display: inline-block;
+        width: auto;
+}
+
+button{
+    background-color:  rgb(212, 84, 182);;
+    border: 1.5px solid blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: block;
+    width: 80%;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+    margin-bottom: 20px;
+            
+}
+
+
+ 
+
+
+</style>
+</head>
+<body>
+<h1> Survey Form</h1>
+    <form id="form">
+        <br>
+        <div class="form-label">
+        <label for="name" id="name">Full Name</label>
+        </br>
+        <input type="text" placeholder="Enter full name"/>
+    </div>
+    <br>
+    <div class="form-label">
+        <label for="email">Email</label>
+        </br>
+        <input type="email" placeholder="Enter your email id"/>
+    </div>
+    
+    <br>
+
+    <div class="form-label">
+        <label for="DOB">Date of Birth</label>
+        </br>
+        <input type="date">
+    </div>
+    <br>
+    <div class="form-label">
+        <label for="age">AGE</label>
+        </br>
+        <input type="number" value="100">
+    </div>
+    <br>
+<div class="form-label">
+    <label for="gender">Gender</label>
+    <br>
+    <input type="radio">Female</input>
+    <br>
+    <input type="radio">Male</input>
+</div>
+<br>
+    <div class="form-label">
+        <label for="profession">What describes your best?</label>
+        </br>
+        <select name="role" id="role">
+            <option value="Student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+        </select>
+        </select>
+    </div> 
+    <br>
+    <div class="form-label">
+        <label for="Langauge">Langauge known</label>
+        <br>
+        <input type="checkbox" name="Langauge">C++</input>
+        <input type="checkbox" name="Langauge">C</input>
+        <input type="checkbox" name="Langauge">Java</input>
+        <input type="checkbox" name="Langauge">JavaScript</input>
+        <input type="checkbox" name="Langauge">Python</input>
+        <input type="checkbox" name="Langauge">CSS</input>
+        <input type="checkbox" name="Langauge">HTML</input>
+        <input type="checkbox" name="Langauge">React</input>
+        <input type="checkbox" name="Langauge">Dart</input>
+    </div>
+    <br>
+   <div class="form-label">
+    <label for="Comments">Any Suggestions/Feedback</label>
+    <br>
+    <textarea name="Comments" placeholder="Any Comments"></textarea>
+   </div>
+   <br>
+   <button type="submit">
+    Submit
+   </button>
+    </form>
+</body>
+</html>
