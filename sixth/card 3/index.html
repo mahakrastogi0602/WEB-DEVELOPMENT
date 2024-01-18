@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 1000px ;
+            height: 500px;
+            background-color: rgb(114, 7, 114);
+            display: flex;
+            flex-direction: row; 
+            overflow: hidden;
+            position: relative;
+        }
+        .box:hover::before{
+            top:0%;
+        }
+    .box::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        transition: top 5s ease; 
+    }
+
+        .left{
+            height: 100%;
+            width:50%;
+            display: flex;
+            flex-direction: column;
+            gap:25px;
+            color: white;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .bg{
+            width: 50%;
+            height: 100%;
+            background-image:url(icon.jpg);
+            background-size:contain;
+            background-position: center;
+        }
+        .content{
+            width: 75%;
+            margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        }
+        #heading{
+            
+            font-size: 2.4rem;
+
+        }
+        .para p{
+            font-size: 1.1rem;
+        }
+        .stats{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #number{
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        #unit{
+            font-weight: smaller;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="box">
+    <div class="left">
+     <div class="content">
+        <h1 id="heading"> Get insights that help your business grow</h1>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ducimus repellat adipisci aliquid nostrum quasi, quidem reprehenderit iure dolores quis distinctio culpa est quod minima quisquam. Quae beatae assumenda ex!</p>
+        </div>
+       
+        <div class="stats">
+            <div>
+                <div id="number">
+                10K
+                </div>
+                <div id="unit">
+                Comments
+                </div>
+            </div>
+            <div>
+                <div id="number">
+                 214
+                 </div>
+                <div id="unit">
+                Paid Customer
+                 </div>
+            </div>
+            <div>
+                 <div id="number">
+                12M+
+                </div>
+                <div id="unit">
+                 Views
+                </div>
+            </div>
+     </div>
+       
+         
+
+    </div>
+
+    </div>
+
+    <div class="bg">
+  
+    </div>
+</div>
+    </div>
+    
+</body>
+</html>
